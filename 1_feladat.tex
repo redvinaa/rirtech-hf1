@@ -1,0 +1,36 @@
+\section{BDC motor leírása}
+
+%{{{
+\subsection{A BDC motor hatásvázlata}
+
+Legyen
+\begin{equation}
+	W_\text{el} = \frac{1}{R_\text{a} + L_\text{a}s}
+\end{equation}
+az elektromos kör átviteli függvénye, és
+\begin{equation}
+	W_\text{me} = \frac{1}{b + J_\text{a}s} \overset{b=0}{=} \frac{1}{J_\text{a}s}
+\end{equation}
+a mechanikai kör átviteli függvénye.
+
+Ekkor a rendszer hatásvázlatát \aref{fig:hatasvazlat}. ábra mutatja.
+
+\begin{figure}[h]
+	\centering
+	\incfig[.8\textwidth]{hatasvazlat}
+	\caption{Hatásvázlat}
+	\label{fig:hatasvazlat}
+\end{figure}
+%}}}
+
+%{{ W_u0<>w1
+\subsection{A feszültség -- szögsebesség átviteli függvény felírása}
+
+Vegyük \aref{fig:hatasvazlat}. ábrát, és legyen $\tau_\text{t}=0$.
+A visszacsatolt kör átviteli függvénye a keresett árviteli függvény:
+\begin{equation}
+	W_{u_0,\omega_1} =
+	\frac{W_\text{el}k_\text{m}W_\text{me}}{1+W_\text{el}k_\text{m}^2W_\text{me}} =
+	\frac{k_\text{m}}{(R_\text{a}+L_\text{a})J_\text{a}s+k_\text{m}^2}.
+\end{equation}
+%}}

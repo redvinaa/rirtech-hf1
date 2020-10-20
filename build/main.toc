@@ -1,0 +1,4 @@
+\contentsline {subsection}{\numberline {a}Az egyen\IeC {\'a}ram\IeC {\'u} motor param\IeC {\'e}terei}{2}{subsection.0.1}
+\contentsline {section}{\numberline {1}BDC motor le\IeC {\'\i }r\IeC {\'a}sa}{3}{section.1}
+\contentsline {subsection}{\numberline {a}A BDC motor hat\IeC {\'a}sv\IeC {\'a}zlata}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {b}A fesz\IeC {\"u}lts\IeC {\'e}g -- sz\IeC {\"o}gsebess\IeC {\'e}g \IeC {\'a}tviteli f\IeC {\"u}ggv\IeC {\'e}ny fel\IeC {\'\i }r\IeC {\'a}sa}{3}{subsection.1.2}
