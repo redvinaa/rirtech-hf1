@@ -1,15 +1,15 @@
 \section{BDC motor leírása}
 
-%{{{
+%{{{ A BDC motor hatásvázlata
 \subsection{A BDC motor hatásvázlata}
 
 Legyen
 \begin{equation}
-	W_\text{el} = \frac{1}{R_\text{a} + L_\text{a}s}
+	\fn{W}_\text{el} = \frac{1}{\Ra  + \La s}
 \end{equation}
 az elektromos kör átviteli függvénye, és
 \begin{equation}
-	W_\text{me} = \frac{1}{b + J_\text{a}s} \overset{b=0}{=} \frac{1}{J_\text{a}s}
+	\fn{W}_\text{me} = \frac{1}{b + \Ja s} \overset{b=0}{=} \frac{1}{\Ja s}
 \end{equation}
 a mechanikai kör átviteli függvénye.
 
@@ -23,14 +23,167 @@ Ekkor a rendszer hatásvázlatát \aref{fig:hatasvazlat}. ábra mutatja.
 \end{figure}
 %}}}
 
-%{{ W_u0<>w1
+%{{{ A feszültség -- szögsebesség átviteli függvény felírása
 \subsection{A feszültség -- szögsebesség átviteli függvény felírása}
+\label{subsect:Wu-w}
 
 Vegyük \aref{fig:hatasvazlat}. ábrát, és legyen $\tau_\text{t}=0$.
-A visszacsatolt kör átviteli függvénye a keresett árviteli függvény:
+
+Az előrecsatoló és visszacsatoló át átviteli függvényei
 \begin{equation}
-	W_{u_0,\omega_1} =
-	\frac{W_\text{el}k_\text{m}W_\text{me}}{1+W_\text{el}k_\text{m}^2W_\text{me}} =
-	\frac{k_\text{m}}{(R_\text{a}+L_\text{a})J_\text{a}s+k_\text{m}^2}.
+	\fn{W}_\text{o} = \fn{W}_\text{el}\km\fn{W}_\text{me},
+\end{equation} és 
+\begin{equation}
+	\fn{W}_\text{f} = \ke.
 \end{equation}
-%}}
+
+A zárthurkú átviteli függvény
+\begin{equation}
+	\fn{W}_{u_0\rightarrow\omega_\text{ki}} = \frac{\km }{\La\Ja s^2 + \Ja\Ra s + \ke\km}
+\end{equation}
+
+A $\fn{W}_{u_0\rightarrow\omega_\text{ki}}$ pólusai:
+\begin{equation}
+	p_1 = \frac{\sqrt{\Ja(\Ja\Ra^2 - 4\La\ke\km)} - \Ja\Ra}{2\Ja\La}
+\end{equation}
+\begin{equation}
+	p_2 = -\frac{\sqrt{\Ja(\Ja\Ra^2 - 4\La\ke\km)} + \Ja\Ra}{2\Ja\La}
+\end{equation}
+
+Az időállandók a pólusok reciprokának negáltjai:
+\begin{equation}\label{eq:T1}
+	T_1 = \frac{2\Ja\La}{\sqrt{\Ja(\Ja\Ra^2 - 4\La\ke\km)} + \Ja\Ra} = 0,0145\text{ s}
+\end{equation}
+\begin{equation}
+	T_2 = -\frac{2\Ja\La}{\sqrt{\Ja(\Ja\Ra^2 - 4\La\ke\km)} - \Ja\Ra} = 1,3825\cdot 10^{-4}\text{ s}
+\end{equation}
+
+A rendszer nullfrekvenciás erősítése
+\begin{equation}
+	A_{u_0\rightarrow\omega_\text{ki}} = \frac{1}{k_\text{e}} = 17,1762
+\end{equation}
+
+%}}}
+
+%{{{ A feszültség -- áram átviteli függvény felírása
+\subsection{A feszültség -- áram átviteli függvény felírása}
+\label{subsect:Wu-i}
+
+Az előrecsatoló és visszacsatoló át átviteli függvényei
+\begin{equation}
+	\fn{W}_\text{o} = \fn{W}_\text{el},
+\end{equation} és 
+\begin{equation}
+	\fn{W}_\text{f} = \km\ke\fn{W}_\text{me}.
+\end{equation}
+
+A zárt hurkú átviteli függvény
+\begin{equation}
+	\fn{W}_{u_0\rightarrow i_\text{a}} = 
+	\frac{\Ja\, s}{\Ja\, \La\, s^2 + \Ja\, \Ra\, s + \ke\, \km}
+\end{equation}
+
+A $\fn{W}_{u_0\rightarrow i_\text{a}}$ pólusai:
+\begin{equation}
+	p_1 = -\frac{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} + \Ja\, \Ra}{2\, \Ja\, \La}
+\end{equation}
+\begin{equation}
+	p_2 = \frac{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} - \Ja\, \Ra}{2\, \Ja\, \La}
+\end{equation}
+
+Az időállandók a pólusok reciprokának negáltjai:
+\begin{equation}
+	T_1 = -\frac{2\, \Ja\, \La}{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} - \Ja\, \Ra} = 0,0145\text{ s}
+\end{equation}
+\begin{equation}
+	T_2 = \frac{2\, \Ja\, \La}{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} + \Ja\, \Ra} = 1,3825\cdot 10^{-4}\text{ s}
+\end{equation}
+
+A rendszer nullfrekvenciás erősítése $A_{u_0\rightarrow i_\text{a}} = 0$.
+
+%}}}
+
+%{{{ A terhelőnyomaték -- szögsebbesség átviteli függvény felírása
+\subsection{A terhelőnyomaték -- szögsebesség átviteli függvény felírása}
+\label{subsect:Wt-w}
+
+Az előrecsatoló és visszacsatoló át átviteli függvényei
+\begin{equation}
+	\fn{W}_\text{o} = -\fn{W}_\text{me},
+\end{equation} és 
+\begin{equation}
+	\fn{W}_\text{f} = -\km\ke\fn{W}_\text{el}.
+\end{equation}
+
+A zárt hurkú átviteli függvény
+\begin{equation}
+	\fn{W}_{\tau_\text{t}\rightarrow\omega_\text{ki}} = 
+	\frac{\Ra + \La\, s}{\Ja\, \La\, s^2 + \Ja\, \Ra\, s + \ke\, \km}
+\end{equation}
+
+A $\fn{W}_{u_0\rightarrow i_\text{a}}$ pólusai:
+\begin{equation}
+	p_1 = \frac{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} - \Ja\, \Ra}{2\, \Ja\, \La}
+\end{equation}
+\begin{equation}
+	p_2 = -\frac{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} + \Ja\, \Ra}{2\, \Ja\, \La}
+\end{equation}
+
+Az időállandók a pólusok reciprokának negáltjai:
+\begin{equation}
+	T_1 = -\frac{2\, \Ja\, \La}{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} - \Ja\, \Ra} = 1,3825\cdot10^{-4}\text{ s}
+\end{equation}
+\begin{equation}
+	T_2 = \frac{2\, \Ja\, \La}{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} + \Ja\, \Ra} = 0,0145\text{ s}
+\end{equation}
+
+A rendszer nullfrekvenciás erősítése
+\begin{equation}
+	A_{\tau_\text{t}\rightarrow\omega_\text{ki}} =
+	- \frac{\Ra}{\km\ke} = -3275,9
+\end{equation}
+
+
+%}}}
+
+%{{{ A terhelőnyomaték -- áram átviteli függvény felírása
+\subsection{A terhelőnyomaték -- áram átviteli függvény felírása}
+\label{subsect:Wt-i}
+
+Az előrecsatoló és visszacsatoló át átviteli függvényei
+\begin{equation}
+	\fn{W}_\text{o} = \fn{W}_\text{me}\ke\fn{W}_\text{el},
+\end{equation} és 
+\begin{equation}
+	\fn{W}_\text{f} = \km.
+\end{equation}
+
+A zárt hurkú átviteli függvény
+\begin{equation}
+	\fn{W}_{\tau_\text{t}\rightarrow\omega_\text{ki}} = 
+	\frac{\Ra + \La\, s}{\Ja\, \La\, s^2 + \Ja\, \Ra\, s + \ke\, \km}
+\end{equation}
+
+A $\fn{W}_{u_0\rightarrow i_\text{a}}$ pólusai:
+\begin{equation}
+	p_1 = \frac{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} - \Ja\, \Ra}{2\, \Ja\, \La}
+\end{equation}
+\begin{equation}
+	p_2 = -\frac{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} + \Ja\, \Ra}{2\, \Ja\, \La}
+\end{equation}
+
+Az időállandók a pólusok reciprokának negáltjai:
+\begin{equation}
+	T_1 = -\frac{2\, \Ja\, \La}{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} - \Ja\, \Ra} = 1,3825\cdot10^{-4}\text{ s}
+\end{equation}
+\begin{equation}
+	T_2 = \frac{2\, \Ja\, \La}{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} + \Ja\, \Ra} = 0,0145\text{ s}
+\end{equation}
+
+A rendszer nullfrekvenciás erősítése
+\begin{equation}
+	A_{\tau_\text{t}\rightarrow\omega_\text{ki}} = \frac{1}{\km} = 17,1821
+\end{equation}
+
+
+%}}}

@@ -47,6 +47,17 @@
 \def\@without#1{\def\svgwidth{\columnwidth} \import{./figures/}{#1.pdf_tex}}
 \makeatother
 
+\makeatletter
+\renewcommand{\p@subsection}{\thesection.}
+\makeatother
+
+\newcommand\un{u_\text{n}}
+\newcommand\km{k_\text{m}}
+\newcommand\ke{k_\text{e}}
+\newcommand\ks{k_\text{s}}
+\newcommand\Ra{R_\text{a}}
+\newcommand\La{L_\text{a}}
+\newcommand\Ja{J_\text{a}}
 \newcommand\T{^\text{T}}
 \newcommand\fn[1]{\mathrm{#1}}
 \newcommand\B[1]{\boldsymbol{\mathrm{#1}}}
@@ -54,8 +65,8 @@
 \newcommand\tild{\textasciitilde}
 \newcommand\sothat{$~\rightarrow~$}
 \newcommand\mat[1]{\begin{bmatrix}#1\end{bmatrix}} 
-\DeclarePairedDelimiter\abs{\lvert}{\rvert}
-\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+\newcommand\abs[1]{\left\lvert #1 \right\rvert}
+\newcommand\norm[1]{\left\lVert #1 \right\rVert}
 \newcommand\unit[1]{~\left[\text{#1}\right]}
 \newcommand\brc[1]{\left(#1\right)}
 \newcommand\reals{\mathbb{R}}
