@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.3)  21 OCT 2020 20:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.3)  22 OCT 2020 00:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1590,12 +1590,6 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 42.
 
 LaTeX Warning: Label `eq:W-x' multiply defined.
 
-
-LaTeX Warning: Label `fig:impulse' multiply defined.
-
-
-LaTeX Warning: Label `fig:step' multiply defined.
-
 )
 \openout1 = `main.aux'.
 
@@ -1874,7 +1868,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [2
 
 ] (./figures/hatasvazlat.pdf_tex
-<./figures/hatasvazlat.pdf, id=142, page=1, 1422.63783pt x 426.79132pt>
+<./figures/hatasvazlat.pdf, id=152, page=1, 1422.63783pt x 426.79132pt>
 File: ./figures/hatasvazlat.pdf Graphic file (type pdf)
 <use ./figures/hatasvazlat.pdf, page 1>
 Package pdftex.def Info: ./figures/hatasvazlat.pdf , page1 used on input line 5
@@ -1902,7 +1896,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
-<./figures/2-a.pdf, id=198, 614.295pt x 794.97pt>
+<./figures/2-a.pdf, id=208, 614.295pt x 794.97pt>
 File: ./figures/2-a.pdf Graphic file (type pdf)
 <use ./figures/2-a.pdf>
 Package pdftex.def Info: ./figures/2-a.pdf  used on input line 26.
@@ -1915,12 +1909,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6 <./figures/2-a.pdf>]
-<./figures/2-b.pdf, id=250, 614.295pt x 794.97pt>
+<./figures/2-b.pdf, id=260, 614.295pt x 794.97pt>
 File: ./figures/2-b.pdf Graphic file (type pdf)
 <use ./figures/2-b.pdf>
 Package pdftex.def Info: ./figures/2-b.pdf  used on input line 62.
 (pdftex.def)             Requested size: 364.19667pt x 255.51328pt.
-<./figures/2-c.pdf, id=253, 614.295pt x 794.97pt>
+<./figures/2-c.pdf, id=263, 614.295pt x 794.97pt>
 File: ./figures/2-c.pdf Graphic file (type pdf)
 <use ./figures/2-c.pdf>
 Package pdftex.def Info: ./figures/2-c.pdf  used on input line 94.
@@ -1940,23 +1934,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8 <./figures/2-c.pdf>]
-<./figures/pi-hatasvazlat.pdf, id=330, 989.51163pt x 283.89572pt>
+<./figures/pi-hatasvazlat.pdf, id=340, 989.51163pt x 283.89572pt>
 File: ./figures/pi-hatasvazlat.pdf Graphic file (type pdf)
 <use ./figures/pi-hatasvazlat.pdf>
 Package pdftex.def Info: ./figures/pi-hatasvazlat.pdf  used on input line 13.
 (pdftex.def)             Requested size: 273.14923pt x 78.36829pt.
-<./figures/process-hatasvazlat.pdf, id=332, 1761.70868pt x 518.54213pt>
+<./figures/process-hatasvazlat.pdf, id=342, 1761.70868pt x 518.54213pt>
 File: ./figures/process-hatasvazlat.pdf Graphic file (type pdf)
 <use ./figures/process-hatasvazlat.pdf>
 Package pdftex.def Info: ./figures/process-hatasvazlat.pdf  used on input line 
 30.
 (pdftex.def)             Requested size: 364.19667pt x 107.1959pt.
-<./figures/polus.pdf, id=336, 614.295pt x 794.97pt>
+<./figures/polus.pdf, id=346, 614.295pt x 794.97pt>
 File: ./figures/polus.pdf Graphic file (type pdf)
 <use ./figures/polus.pdf>
 Package pdftex.def Info: ./figures/polus.pdf  used on input line 66.
 (pdftex.def)             Requested size: 223.07211pt x 158.5794pt.
-<./figures/polus-big.pdf, id=338, 614.295pt x 794.97pt>
+<./figures/polus-big.pdf, id=348, 614.295pt x 794.97pt>
 File: ./figures/polus-big.pdf Graphic file (type pdf)
 <use ./figures/polus-big.pdf>
 Package pdftex.def Info: ./figures/polus-big.pdf  used on input line 70.
@@ -1977,7 +1971,7 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 84.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<./figures/bode.pdf, id=355, 614.295pt x 794.97pt>
+<./figures/bode.pdf, id=365, 614.295pt x 794.97pt>
 File: ./figures/bode.pdf Graphic file (type pdf)
 <use ./figures/bode.pdf>
 Package pdftex.def Info: ./figures/bode.pdf  used on input line 89.
@@ -1990,12 +1984,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10 <./figures/polus.pdf> <./figures/polus-big.pdf> <./figures/bode.pdf>]
-<./figures/impulse.pdf, id=508, 614.295pt x 794.97pt>
+<./figures/impulse.pdf, id=518, 614.295pt x 794.97pt>
 File: ./figures/impulse.pdf Graphic file (type pdf)
 <use ./figures/impulse.pdf>
 Package pdftex.def Info: ./figures/impulse.pdf  used on input line 107.
 (pdftex.def)             Requested size: 318.66948pt x 221.30725pt.
-<./figures/step.pdf, id=510, 614.295pt x 794.97pt>
+<./figures/step.pdf, id=520, 614.295pt x 794.97pt>
 File: ./figures/step.pdf Graphic file (type pdf)
 <use ./figures/step.pdf>
 Package pdftex.def Info: ./figures/step.pdf  used on input line 122.
@@ -2009,17 +2003,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11 <./figures/impulse.pdf> <./figures/step.pdf>]
-<./figures/polus2.pdf, id=560, 614.295pt x 794.97pt>
+<./figures/polus2.pdf, id=570, 614.295pt x 794.97pt>
 File: ./figures/polus2.pdf Graphic file (type pdf)
 <use ./figures/polus2.pdf>
 Package pdftex.def Info: ./figures/polus2.pdf  used on input line 42.
 (pdftex.def)             Requested size: 223.07211pt x 158.5794pt.
-<./figures/polus2-big.pdf, id=562, 614.295pt x 794.97pt>
+<./figures/polus2-big.pdf, id=572, 614.295pt x 794.97pt>
 File: ./figures/polus2-big.pdf Graphic file (type pdf)
 <use ./figures/polus2-big.pdf>
 Package pdftex.def Info: ./figures/polus2-big.pdf  used on input line 46.
 (pdftex.def)             Requested size: 223.07211pt x 158.5794pt.
-<./figures/bode2.pdf, id=565, 614.295pt x 794.97pt>
+<./figures/bode2.pdf, id=575, 614.295pt x 794.97pt>
 File: ./figures/bode2.pdf Graphic file (type pdf)
 <use ./figures/bode2.pdf>
 Package pdftex.def Info: ./figures/bode2.pdf  used on input line 65.
@@ -2032,12 +2026,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12 <./figures/polus2.pdf> <./figures/polus2-big.pdf>]
-<./figures/impulse2.pdf, id=623, 614.295pt x 794.97pt>
+<./figures/impulse2.pdf, id=620, 614.295pt x 794.97pt>
 File: ./figures/impulse2.pdf Graphic file (type pdf)
 <use ./figures/impulse2.pdf>
 Package pdftex.def Info: ./figures/impulse2.pdf  used on input line 83.
 (pdftex.def)             Requested size: 318.66948pt x 221.30725pt.
-<./figures/step2.pdf, id=625, 614.295pt x 794.97pt>
+<./figures/step2.pdf, id=622, 614.295pt x 794.97pt>
 File: ./figures/step2.pdf Graphic file (type pdf)
 <use ./figures/step2.pdf>
 Package pdftex.def Info: ./figures/step2.pdf  used on input line 98.
@@ -2049,7 +2043,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13 <./figures/bode2.pdf> <./figures/impulse2.pdf>]) (./misc/bib.tex
+[13 <./figures/bode2.pdf> <./figures/impulse2.pdf>]) (./5_feladat.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.58502pt.
@@ -2057,6 +2051,42 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14 <./figures/step2.pdf>]
+<./figures/5-w.pdf, id=770, 614.295pt x 794.97pt>
+File: ./figures/5-w.pdf Graphic file (type pdf)
+<use ./figures/5-w.pdf>
+Package pdftex.def Info: ./figures/5-w.pdf  used on input line 36.
+(pdftex.def)             Requested size: 223.07211pt x 154.91278pt.
+<./figures/5-i.pdf, id=772, 614.295pt x 794.97pt>
+File: ./figures/5-i.pdf Graphic file (type pdf)
+<use ./figures/5-i.pdf>
+Package pdftex.def Info: ./figures/5-i.pdf  used on input line 40.
+(pdftex.def)             Requested size: 223.07211pt x 154.91278pt.
+) (./6_feladat.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.58502pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15 <./figures/5-w.pdf> <./figures/5-i.pdf>]
+<./figures/6-w.pdf, id=822, 614.295pt x 794.97pt>
+File: ./figures/6-w.pdf Graphic file (type pdf)
+<use ./figures/6-w.pdf>
+Package pdftex.def Info: ./figures/6-w.pdf  used on input line 9.
+(pdftex.def)             Requested size: 223.07211pt x 154.91278pt.
+<./figures/6-i.pdf, id=824, 614.295pt x 794.97pt>
+File: ./figures/6-i.pdf Graphic file (type pdf)
+<use ./figures/6-i.pdf>
+Package pdftex.def Info: ./figures/6-i.pdf  used on input line 13.
+(pdftex.def)             Requested size: 223.07211pt x 154.91278pt.
+) (./misc/bib.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.58502pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <./figures/6-w.pdf> <./figures/6-i.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 [][]$\T1/pcr/m/n/10 https : / / www . maxongroup . com / maxon / view / product
  / motor / dcmotor / amax / amax32 /
@@ -2069,25 +2099,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
+[17]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 23.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 23.
  (build/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 23.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 23.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 23.
  ) 
 Here is how much of TeX's memory you used:
- 38092 strings out of 492982
- 706954 string characters out of 6134897
- 856849 words of memory out of 5000000
- 40957 multiletter control sequences out of 15000+600000
+ 38137 strings out of 492982
+ 707740 string characters out of 6134897
+ 856847 words of memory out of 5000000
+ 40979 multiletter control sequences out of 15000+600000
  580665 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,13n,54p,10398b,786s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2104,10 +2134,10 @@ cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
 xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb>
-Output written on build/main.pdf (16 pages, 610141 bytes).
+Output written on build/main.pdf (18 pages, 715868 bytes).
 PDF statistics:
- 851 PDF objects out of 1000 (max. 8388607)
- 765 compressed objects within 8 object streams
- 113 named destinations out of 1000 (max. 500000)
- 347 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 943 PDF objects out of 1000 (max. 8388607)
+ 846 compressed objects within 9 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 407 words of extra memory for PDF output out of 10000 (max. 10000000)
 

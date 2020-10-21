@@ -59,15 +59,3 @@ hold off
 title('')
 xlabel('körerősítés')
 ylabel('pólus valós része')
-
-
-
-% disp('dcgain')
-% abs(subs(Wx, s, 0))
-
-% pi = poles(Wx, s);
-% p2 = simplify(pi(1))
-% p1 = simplify(pi(2))
-% T2 = -1/p2
-% T1 = -1/p1
-

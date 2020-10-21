@@ -2,7 +2,7 @@ clc
 disp('file: num_calc4')
 
 s = tf('s');
-P = 4.063
+P = 0.05
 TD = 1.3825e-4
 n = 40.827
 parameters

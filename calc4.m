@@ -45,7 +45,7 @@ disp('Poles')
 pi = solve(num_Wx_den, s);
 pi = vpa(pi)
 
-arr_P = linspace(-50, 50, 1000);
+arr_P = linspace(-2, 1, 1000);
 fun_p1 = symfun(pi(1), P);
 fun_p2 = symfun(pi(2), P);
 fun_p3 = symfun(pi(3), P);
@@ -54,8 +54,8 @@ plot(arr_P, real(fun_p1(arr_P)))
 plot(arr_P, real(fun_p2(arr_P)))
 plot(arr_P, real(fun_p3(arr_P)))
 legend('p1', 'p2', 'p3');grid;
-% xlim([-1 1]);
-% ylim([-250 0]);
+xlim([-2 1]);
+ylim([-200 100]);
 hold off
 title('')
 xlabel('körerősítés')

@@ -200,12 +200,6 @@ zlibrarytopaths.code.tex)))
 
 LaTeX Warning: Label `eq:W-x' multiply defined.
 
-
-LaTeX Warning: Label `fig:impulse' multiply defined.
-
-
-LaTeX Warning: Label `fig:step' multiply defined.
-
 ) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -332,14 +326,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13 <./figures/bode2.pdf> <./figures/impulse2.pdf>]) (./misc/bib.tex
+[13 <./figures/bode2.pdf> <./figures/impulse2.pdf>]) (./5_feladat.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.58502pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14 <./figures/step2.pdf>]
+[14 <./figures/step2.pdf>]) (./6_feladat.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.58502pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15 <./figures/5-w.pdf> <./figures/5-i.pdf>]) (./misc/bib.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.58502pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <./figures/6-w.pdf> <./figures/6-i.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 [][]$\T1/pcr/m/n/10 https : / / www . maxongroup . com / maxon / view / product
  / motor / dcmotor / amax / amax32 /
@@ -350,7 +358,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15] (build/main.aux)
+[17] (build/main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -368,5 +376,5 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on build/main.pdf (16 pages, 610141 bytes).
+Output written on build/main.pdf (18 pages, 715868 bytes).
 Transcript written on build/main.log.
