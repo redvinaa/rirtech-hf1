@@ -43,8 +43,8 @@ Wc = P*(1 + 1/(TI*s));
 %{{{ Plot 5-w %}
 Yw = (Wp*Wc*Uw + Wtw*Ut)  /  (Wp*Wc + 1);
 Yw = simplify(Yw)
-disp('Output')
-latex(Yw)
+% disp('Output')
+% latex(Yw)
 
 % num_Yw = subs(Yw, [Ra, La, km, ke, Ja, TI, P, T0, wn], [num_Ra, num_La, num_km, num_ke, num_Ja, num_TI, num_P, num_T0, num_wn]);
 % num_Yw = vpa(num_Yw);
@@ -54,7 +54,7 @@ latex(Yw)
 
 % t = linspace(0, .3, 1000);
 
-% tau_i = [-0.1 -0.2 -0.337];
+% tau_i = [0.1 0.2 0.337];
 
 % hold on
 % for i = 1:length(tau_i)
@@ -62,77 +62,77 @@ latex(Yw)
 % end
 % xlabel('idő (s)');
 % ylabel('szögsebesség (rad/s)');
-% legend('-0.1', '-0.2', '-0.337');
+% legend('0.1', '0.2', '0.337');
 % grid;
 % hold off;
 %}}}
 
 %{{{ Plot 5-i %}
-% Yi = ke*Wel*(Uw - Yw);
-% disp('Output')
-% latex(Yw);
-
-% num_Yi = subs(Yi, [Ra, La, km, ke, Ja, TI, P, T0, wn], [num_Ra, num_La, num_km, num_ke, num_Ja, num_TI, num_P, num_T0, num_wn]);
-% num_Yi = vpa(num_Yi);
-% yi = ilaplace(num_Yi, s, t)
-% fun_yi = symfun(yi, [t tau0])
-
-% t = linspace(0, .3, 1000);
-
-% tau_i = [-0.1 -0.2 -0.337];
-
-% hold on
-% for i = 1:length(tau_i)
-%     plot(t, fun_yi(t, tau_i(i)), 'LineWidth', 2);grid;
-% end
-% xlabel('idő (s)');
-% ylabel('armatúra áram (A)');
-% legend('-0.1', '-0.2', '-0.337');
-% hold off;
-% grid;
-%}}}
-
-%{{{ tau_max %}
 Yi = ke*Wel*(Uw - Yw);
+disp('Output')
+latex(Yw);
 
 num_Yi = subs(Yi, [Ra, La, km, ke, Ja, TI, P, T0, wn], [num_Ra, num_La, num_km, num_ke, num_Ja, num_TI, num_P, num_T0, num_wn]);
 num_Yi = vpa(num_Yi);
 yi = ilaplace(num_Yi, s, t)
 fun_yi = symfun(yi, [t tau0])
 
-t = linspace(0.099, .15, 500);
-tau_i = linspace(0.3, 1, 20);
+t = linspace(0, .3, 1000);
 
-imax = 0;
-taumax = 0;
-tmax = 0;
+tau_i = [0.1 0.2 0.337];
+
+hold on
 for i = 1:length(tau_i)
-	for j = 1:length(t)
-		I = abs(fun_yi(t(j), tau_i(i)));
-		if I > imax
-			imax = I;
-			taumax = tau_i(i);
-			tmax = t(j);
-		end
-		if I > num_in
-			disp('found max')
-			disp('imax:')
-			imax
-			disp('taumax')
-			taumax
-			disp('tmax')
-			tmax
-			return
-		end
-	end
+	plot(t, fun_yi(t, tau_i(i)), 'LineWidth', 2);grid;
 end
-disp('max not found')
-disp('imax:')
-imax
-disp('taumax')
-taumax
-disp('tmax')
-tmax
+xlabel('idő (s)');
+ylabel('armatúra áram (A)');
+legend('0.1', '0.2', '0.337');
+hold off;
+grid;
+%}}}
+
+%{{{ tau_max %}
+% Yi = ke*Wel*(Uw - Yw);
+
+% num_Yi = subs(Yi, [Ra, La, km, ke, Ja, TI, P, T0, wn], [num_Ra, num_La, num_km, num_ke, num_Ja, num_TI, num_P, num_T0, num_wn]);
+% num_Yi = vpa(num_Yi);
+% yi = ilaplace(num_Yi, s, t)
+% fun_yi = symfun(yi, [t tau0])
+
+% t = linspace(0.099, .15, 500);
+% tau_i = linspace(0.3, 1, 20);
+
+% imax = 0;
+% taumax = 0;
+% tmax = 0;
+% for i = 1:length(tau_i)
+%     for j = 1:length(t)
+%         I = abs(fun_yi(t(j), tau_i(i)));
+%         if I > imax
+%             imax = I;
+%             taumax = tau_i(i);
+%             tmax = t(j);
+%         end
+%         if I > num_in
+%             disp('found max')
+%             disp('imax:')
+%             imax
+%             disp('taumax')
+%             taumax
+%             disp('tmax')
+%             tmax
+%             return
+%         end
+%     end
+% end
+% disp('max not found')
+% disp('imax:')
+% imax
+% disp('taumax')
+% taumax
+% disp('tmax')
+% tmax
 %}}}
 
 %{{{ Trash
