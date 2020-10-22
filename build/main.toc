@@ -2,23 +2,23 @@
 \contentsline {subsection}{\numberline {a}A BDC motor hat\IeC {\'a}sv\IeC {\'a}zlata}{3}{subsection.1.1}
 \contentsline {subsection}{\numberline {b}A fesz\IeC {\"u}lts\IeC {\'e}g -- sz\IeC {\"o}gsebess\IeC {\'e}g \IeC {\'a}tviteli f\IeC {\"u}ggv\IeC {\'e}ny fel\IeC {\'\i }r\IeC {\'a}sa}{3}{subsection.1.2}
 \contentsline {subsection}{\numberline {c}A fesz\IeC {\"u}lts\IeC {\'e}g -- \IeC {\'a}ram \IeC {\'a}tviteli f\IeC {\"u}ggv\IeC {\'e}ny fel\IeC {\'\i }r\IeC {\'a}sa}{4}{subsection.1.3}
-\contentsline {subsection}{\numberline {d}A terhel\IeC {\H o}nyomat\IeC {\'e}k -- sz\IeC {\"o}gsebess\IeC {\'e}g \IeC {\'a}tviteli f\IeC {\"u}ggv\IeC {\'e}ny fel\IeC {\'\i }r\IeC {\'a}sa}{4}{subsection.1.4}
+\contentsline {subsection}{\numberline {d}A terhel\IeC {\H o}nyomat\IeC {\'e}k -- sz\IeC {\"o}gsebess\IeC {\'e}g \IeC {\'a}tviteli f\IeC {\"u}ggv\IeC {\'e}ny fel\IeC {\'\i }r\IeC {\'a}sa}{5}{subsection.1.4}
 \contentsline {subsection}{\numberline {e}A terhel\IeC {\H o}nyomat\IeC {\'e}k -- \IeC {\'a}ram \IeC {\'a}tviteli f\IeC {\"u}ggv\IeC {\'e}ny fel\IeC {\'\i }r\IeC {\'a}sa}{5}{subsection.1.5}
-\contentsline {section}{\numberline {2}BDC motor vizsg\IeC {\'a}lata}{6}{section.2}
-\contentsline {subsection}{\numberline {a}Sz\IeC {\"o}gsebess\IeC {\'e}gv\IeC {\'a}lasz a n\IeC {\'e}vleges fesz\IeC {\"u}lts\IeC {\'e}gre}{6}{subsection.2.1}
-\contentsline {subsection}{\numberline {b}\IeC {\'A}ram kimenet a n\IeC {\'e}vleges fesz\IeC {\"u}lts\IeC {\'e}g hat\IeC {\'a}s\IeC {\'a}ra}{7}{subsection.2.2}
-\contentsline {subsection}{\numberline {c}Nyomat\IeC {\'e}k kimenet a n\IeC {\'e}vleges fesz\IeC {\"u}lts\IeC {\'e}g hat\IeC {\'a}s\IeC {\'a}ra}{7}{subsection.2.3}
-\contentsline {section}{\numberline {3}PI szab\IeC {\'a}lyz\IeC {\'o} tervez\IeC {\'e}se}{9}{section.3}
-\contentsline {subsection}{\numberline {a}A z\IeC {\'a}rt szab\IeC {\'a}lyoz\IeC {\'a}si k\IeC {\"o}r egyenletei}{9}{subsection.3.1}
-\contentsline {subsection}{\numberline {b}Stabilit\IeC {\'a}s a k\IeC {\"o}rer\IeC {\H o}s\IeC {\'\i }t\IeC {\'e}s f\IeC {\"u}ggv\IeC {\'e}ny\IeC {\'e}ben}{10}{subsection.3.2}
-\contentsline {subsection}{\numberline {c}Megadott k\IeC {\"o}rer\IeC {\H o}s\IeC {\'\i }t\IeC {\'e}s eset\IeC {\'e}n Bode-diagram \IeC {\'e}s f\IeC {\'a}zistartal\IeC {\'e}k}{10}{subsection.3.3}
-\contentsline {subsection}{\numberline {d}S\IeC {\'u}lyf\IeC {\"u}ggv\IeC {\'e}ny}{11}{subsection.3.4}
-\contentsline {subsection}{\numberline {e}\IeC {\'A}tmeneti f\IeC {\"u}ggv\IeC {\'e}ny}{11}{subsection.3.5}
-\contentsline {section}{\numberline {4}PD szab\IeC {\'a}lyz\IeC {\'o} tervez\IeC {\'e}se}{12}{section.4}
-\contentsline {subsection}{\numberline {a}A z\IeC {\'a}rt szab\IeC {\'a}lyoz\IeC {\'a}si k\IeC {\"o}r egyenletei}{12}{subsection.4.1}
-\contentsline {subsection}{\numberline {b}Stabilit\IeC {\'a}s a k\IeC {\"o}rer\IeC {\H o}s\IeC {\'\i }t\IeC {\'e}s f\IeC {\"u}ggv\IeC {\'e}ny\IeC {\'e}ben}{12}{subsection.4.2}
-\contentsline {subsection}{\numberline {c}Megadott k\IeC {\"o}rer\IeC {\H o}s\IeC {\'\i }t\IeC {\'e}s eset\IeC {\'e}n Bode-diagram \IeC {\'e}s f\IeC {\'a}zistartal\IeC {\'e}k}{12}{subsection.4.3}
-\contentsline {subsection}{\numberline {d}S\IeC {\'u}lyf\IeC {\"u}ggv\IeC {\'e}ny}{13}{subsection.4.4}
-\contentsline {subsection}{\numberline {e}\IeC {\'A}tmeneti f\IeC {\"u}ggv\IeC {\'e}ny}{14}{subsection.4.5}
-\contentsline {section}{\numberline {5}Zavar\IeC {\'o} jel PI szab\IeC {\'a}lyoz\IeC {\'o}val (Szorgalmi feladat)}{15}{section.5}
-\contentsline {section}{\numberline {6}Zavar\IeC {\'o} jel PD szab\IeC {\'a}lyoz\IeC {\'o}val (Szorgalmi feladat)}{16}{section.6}
+\contentsline {section}{\numberline {2}BDC motor vizsg\IeC {\'a}lata}{7}{section.2}
+\contentsline {subsection}{\numberline {a}Sz\IeC {\"o}gsebess\IeC {\'e}gv\IeC {\'a}lasz a n\IeC {\'e}vleges fesz\IeC {\"u}lts\IeC {\'e}gre}{7}{subsection.2.1}
+\contentsline {subsection}{\numberline {b}\IeC {\'A}ram kimenet a n\IeC {\'e}vleges fesz\IeC {\"u}lts\IeC {\'e}g hat\IeC {\'a}s\IeC {\'a}ra}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {c}Nyomat\IeC {\'e}k kimenet a n\IeC {\'e}vleges fesz\IeC {\"u}lts\IeC {\'e}g hat\IeC {\'a}s\IeC {\'a}ra}{8}{subsection.2.3}
+\contentsline {section}{\numberline {3}PI szab\IeC {\'a}lyz\IeC {\'o} tervez\IeC {\'e}se}{10}{section.3}
+\contentsline {subsection}{\numberline {a}A z\IeC {\'a}rt szab\IeC {\'a}lyoz\IeC {\'a}si k\IeC {\"o}r egyenletei}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {b}Stabilit\IeC {\'a}s a k\IeC {\"o}rer\IeC {\H o}s\IeC {\'\i }t\IeC {\'e}s f\IeC {\"u}ggv\IeC {\'e}ny\IeC {\'e}ben}{11}{subsection.3.2}
+\contentsline {subsection}{\numberline {c}Megadott k\IeC {\"o}rer\IeC {\H o}s\IeC {\'\i }t\IeC {\'e}s eset\IeC {\'e}n Bode-diagram \IeC {\'e}s f\IeC {\'a}zistartal\IeC {\'e}k}{11}{subsection.3.3}
+\contentsline {subsection}{\numberline {d}S\IeC {\'u}lyf\IeC {\"u}ggv\IeC {\'e}ny}{12}{subsection.3.4}
+\contentsline {subsection}{\numberline {e}\IeC {\'A}tmeneti f\IeC {\"u}ggv\IeC {\'e}ny}{12}{subsection.3.5}
+\contentsline {section}{\numberline {4}PD szab\IeC {\'a}lyz\IeC {\'o} tervez\IeC {\'e}se}{13}{section.4}
+\contentsline {subsection}{\numberline {a}A z\IeC {\'a}rt szab\IeC {\'a}lyoz\IeC {\'a}si k\IeC {\"o}r egyenletei}{13}{subsection.4.1}
+\contentsline {subsection}{\numberline {b}Stabilit\IeC {\'a}s a k\IeC {\"o}rer\IeC {\H o}s\IeC {\'\i }t\IeC {\'e}s f\IeC {\"u}ggv\IeC {\'e}ny\IeC {\'e}ben}{13}{subsection.4.2}
+\contentsline {subsection}{\numberline {c}Megadott k\IeC {\"o}rer\IeC {\H o}s\IeC {\'\i }t\IeC {\'e}s eset\IeC {\'e}n Bode-diagram \IeC {\'e}s f\IeC {\'a}zistartal\IeC {\'e}k}{13}{subsection.4.3}
+\contentsline {subsection}{\numberline {d}S\IeC {\'u}lyf\IeC {\"u}ggv\IeC {\'e}ny}{14}{subsection.4.4}
+\contentsline {subsection}{\numberline {e}\IeC {\'A}tmeneti f\IeC {\"u}ggv\IeC {\'e}ny}{15}{subsection.4.5}
+\contentsline {section}{\numberline {5}Zavar\IeC {\'o} jel PI szab\IeC {\'a}lyoz\IeC {\'o}val (Szorgalmi feladat)}{16}{section.5}
+\contentsline {section}{\numberline {6}Zavar\IeC {\'o} jel PD szab\IeC {\'a}lyoz\IeC {\'o}val (Szorgalmi feladat)}{18}{section.6}

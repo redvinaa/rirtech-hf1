@@ -14,6 +14,15 @@ az elektromos kör átviteli függvénye, és
 a mechanikai kör átviteli függvénye.
 
 Ekkor a rendszer hatásvázlatát \aref{fig:hatasvazlat}. ábra mutatja.
+$\fn{U}_0$ a motorra kapcsolt feszültség, amelyből levonjuk a szögsebességgel arányos feszültséget.
+Az így kapott feszültség, $\fn{U}_\text{be}$ esik az ellenálláson. $\fn{W}_\text{el}$ az armatúra
+ellenállás és tekercs admittanciája, amelyre rákapcsolva $\fn{U}_\text{be}$-t megkapjuk az
+armatúra áramot. A motor nyomatékát a $\km$ szorzó adja, a $\tau_\text{v}=\km \fn{I}_\text{a}$
+egyenlet alapján, amihez előjelesen hozzáadjuk a külső terhelést. Az így kapott összes
+nyomatékot a $\fn{W}_\text{me}$-vel szorozva kapjuk meg a motor szögsebességét,
+$\Omega_\text{ki}$-t, ami tartalmazza a forgórész tehetetlenségi nyomatékát, valamint
+a csapágysúrlódást is, amit most elhanyagolunk. $\Omega_\text{ki}\ke$ adja a feszültséget, 
+amit ki kell vonnunk a kapocsfeszültségből.
 
 \begin{figure}[h]
 	\centering
@@ -31,7 +40,7 @@ Vegyük \aref{fig:hatasvazlat}. ábrát, és legyen $\tau_\text{t}=0$.
 
 Az előrecsatoló és visszacsatoló át átviteli függvényei
 \begin{equation}
-	\fn{W}_\text{o} = \fn{W}_\text{el}\km\fn{W}_\text{me},
+	\fn{W}_\text{x} = \fn{W}_\text{el}\km\fn{W}_\text{me},
 \end{equation} és 
 \begin{equation}
 	\fn{W}_\text{f} = \ke.
@@ -39,10 +48,12 @@ Az előrecsatoló és visszacsatoló át átviteli függvényei
 
 A zárthurkú átviteli függvény
 \begin{equation}
-	\fn{W}_{u_0\rightarrow\omega_\text{ki}} = \frac{\km }{\La\Ja s^2 + \Ja\Ra s + \ke\km}
+	\fn{W}_{\fn{U}_0\rightarrow\Omega_\text{ki}} =
+	\frac{\fn{W}_\text{x}}{1 + \fn{W}_\text{x}\fn{W}_f} =
+	\frac{\km }{\La\Ja s^2 + \Ja\Ra s + \ke\km}
 \end{equation}
 
-A $\fn{W}_{u_0\rightarrow\omega_\text{ki}}$ pólusai:
+A $\fn{W}_{\fn{U}_0\rightarrow\Omega_\text{ki}}$ pólusai:
 \begin{equation}
 	p_1 = \frac{\sqrt{\Ja(\Ja\Ra^2 - 4\La\ke\km)} - \Ja\Ra}{2\Ja\La}
 \end{equation}
@@ -60,7 +71,7 @@ Az időállandók a pólusok reciprokának negáltjai:
 
 A rendszer nullfrekvenciás erősítése
 \begin{equation}
-	A_{u_0\rightarrow\omega_\text{ki}} = \frac{1}{k_\text{e}} = 17,1762
+	A_{\fn{U}_0\rightarrow\Omega_\text{ki}} = \frac{1}{k_\text{e}} = 17,1762
 \end{equation}
 
 %}}}
@@ -71,7 +82,7 @@ A rendszer nullfrekvenciás erősítése
 
 Az előrecsatoló és visszacsatoló át átviteli függvényei
 \begin{equation}
-	\fn{W}_\text{o} = \fn{W}_\text{el},
+	\fn{W}_\text{x} = \fn{W}_\text{el},
 \end{equation} és 
 \begin{equation}
 	\fn{W}_\text{f} = \km\ke\fn{W}_\text{me}.
@@ -79,11 +90,11 @@ Az előrecsatoló és visszacsatoló át átviteli függvényei
 
 A zárt hurkú átviteli függvény
 \begin{equation}
-	\fn{W}_{u_0\rightarrow i_\text{a}} = 
+	\fn{W}_{\fn{U}_0\rightarrow \fn{I}_\text{a}} = 
 	\frac{\Ja\, s}{\Ja\, \La\, s^2 + \Ja\, \Ra\, s + \ke\, \km}
 \end{equation}
 
-A $\fn{W}_{u_0\rightarrow i_\text{a}}$ pólusai:
+A $\fn{W}_{\fn{U}_0\rightarrow \fn{I}_\text{a}}$ pólusai:
 \begin{equation}
 	p_1 = -\frac{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} + \Ja\, \Ra}{2\, \Ja\, \La}
 \end{equation}
@@ -99,7 +110,7 @@ Az időállandók a pólusok reciprokának negáltjai:
 	T_2 = \frac{2\, \Ja\, \La}{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} + \Ja\, \Ra} = 1,3825\cdot 10^{-4}\text{ s}
 \end{equation}
 
-A rendszer nullfrekvenciás erősítése $A_{u_0\rightarrow i_\text{a}} = 0$.
+A rendszer nullfrekvenciás erősítése $A_{\fn{U}_0\rightarrow \fn{I}_\text{a}} = 0$.
 
 %}}}
 
@@ -109,7 +120,7 @@ A rendszer nullfrekvenciás erősítése $A_{u_0\rightarrow i_\text{a}} = 0$.
 
 Az előrecsatoló és visszacsatoló át átviteli függvényei
 \begin{equation}
-	\fn{W}_\text{o} = -\fn{W}_\text{me},
+	\fn{W}_\text{x} = -\fn{W}_\text{me},
 \end{equation} és 
 \begin{equation}
 	\fn{W}_\text{f} = -\km\ke\fn{W}_\text{el}.
@@ -117,11 +128,11 @@ Az előrecsatoló és visszacsatoló át átviteli függvényei
 
 A zárt hurkú átviteli függvény
 \begin{equation}
-	\fn{W}_{\tau_\text{t}\rightarrow\omega_\text{ki}} = 
+	\fn{W}_{\tau_\text{t}\rightarrow\Omega_\text{ki}} = 
 	\frac{\Ra + \La\, s}{\Ja\, \La\, s^2 + \Ja\, \Ra\, s + \ke\, \km}
 \end{equation}
 
-A $\fn{W}_{u_0\rightarrow i_\text{a}}$ pólusai:
+A $\fn{W}_{\fn{U}_0\rightarrow \fn{I}_\text{a}}$ pólusai:
 \begin{equation}
 	p_1 = \frac{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} - \Ja\, \Ra}{2\, \Ja\, \La}
 \end{equation}
@@ -139,7 +150,7 @@ Az időállandók a pólusok reciprokának negáltjai:
 
 A rendszer nullfrekvenciás erősítése
 \begin{equation}
-	A_{\tau_\text{t}\rightarrow\omega_\text{ki}} =
+	A_{\tau_\text{t}\rightarrow\Omega_\text{ki}} =
 	- \frac{\Ra}{\km\ke} = -3275,9
 \end{equation}
 
@@ -152,7 +163,7 @@ A rendszer nullfrekvenciás erősítése
 
 Az előrecsatoló és visszacsatoló át átviteli függvényei
 \begin{equation}
-	\fn{W}_\text{o} = \fn{W}_\text{me}\ke\fn{W}_\text{el},
+	\fn{W}_\text{x} = \fn{W}_\text{me}\ke\fn{W}_\text{el},
 \end{equation} és 
 \begin{equation}
 	\fn{W}_\text{f} = \km.
@@ -160,11 +171,11 @@ Az előrecsatoló és visszacsatoló át átviteli függvényei
 
 A zárt hurkú átviteli függvény
 \begin{equation}
-	\fn{W}_{\tau_\text{t}\rightarrow\omega_\text{ki}} = 
+	\fn{W}_{\tau_\text{t}\rightarrow\Omega_\text{ki}} = 
 	\frac{\Ra + \La\, s}{\Ja\, \La\, s^2 + \Ja\, \Ra\, s + \ke\, \km}
 \end{equation}
 
-A $\fn{W}_{u_0\rightarrow i_\text{a}}$ pólusai:
+A $\fn{W}_{\fn{U}_0\rightarrow \fn{I}_\text{a}}$ pólusai:
 \begin{equation}
 	p_1 = \frac{\sqrt{\Ja\, \left(\Ja\, {\Ra}^2 - 4\, \La\, \ke\, \km\right)} - \Ja\, \Ra}{2\, \Ja\, \La}
 \end{equation}
@@ -182,7 +193,7 @@ Az időállandók a pólusok reciprokának negáltjai:
 
 A rendszer nullfrekvenciás erősítése
 \begin{equation}
-	A_{\tau_\text{t}\rightarrow\omega_\text{ki}} = \frac{1}{\km} = 17,1821
+	A_{\tau_\text{t}\rightarrow\Omega_\text{ki}} = \frac{1}{\km} = 17,1821
 \end{equation}
 
 

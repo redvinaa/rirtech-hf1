@@ -236,8 +236,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \clearpage
-               [1] (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd))
-(./1_feladat.tex
+               [1]) (./1_feladat.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.58502pt.
@@ -258,42 +257,49 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4]) (./2_feladat.tex
+[4]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.58502pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]
+[5]) (./2_feladat.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.58502pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6 <./figures/2-a.pdf>]
+[6]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.58502pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7 <./figures/2-b.pdf>]) (./3_feladat.tex
+[7 <./figures/2-a.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.58502pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <./figures/2-c.pdf>]
+[8 <./figures/2-b.pdf>]) (./3_feladat.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.58502pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9 <./figures/pi-hatasvazlat.pdf> <./figures/process-hatasvazlat.pdf
+[9 <./figures/2-c.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.58502pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <./figures/pi-hatasvazlat.pdf> <./figures/process-hatasvazlat.pdf
 
 pdfTeX warning: pdflatex (file ./figures/process-hatasvazlat.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
@@ -304,7 +310,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <./figures/polus.pdf> <./figures/polus-big.pdf> <./figures/bode.pdf>])
+[11 <./figures/polus.pdf> <./figures/polus-big.pdf> <./figures/bode.pdf>])
 (./4_feladat.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -312,42 +318,49 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11 <./figures/impulse.pdf> <./figures/step.pdf>]
+[12 <./figures/impulse.pdf> <./figures/step.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.58502pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12 <./figures/polus2.pdf> <./figures/polus2-big.pdf>]
+[13 <./figures/polus2.pdf> <./figures/polus2-big.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.58502pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13 <./figures/bode2.pdf> <./figures/impulse2.pdf>]) (./5_feladat.tex
+[14 <./figures/bode2.pdf> <./figures/impulse2.pdf>]) (./5_feladat.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.58502pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14 <./figures/step2.pdf>]) (./6_feladat.tex
+[15 <./figures/step2.pdf>]) (./6_feladat.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.58502pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <./figures/5-w.pdf> <./figures/5-i.pdf>]) (./misc/bib.tex
+[16 <./figures/5-w.pdf> <./figures/5-i.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.58502pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16 <./figures/6-w.pdf> <./figures/6-i.pdf>]
+[17]) (./misc/bib.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.58502pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18 <./figures/6-w.pdf> <./figures/6-i.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 [][]$\T1/pcr/m/n/10 https : / / www . maxongroup . com / maxon / view / product
  / motor / dcmotor / amax / amax32 /
@@ -358,7 +371,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17] (build/main.aux)
+[19] (build/main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -376,5 +389,5 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on build/main.pdf (18 pages, 724137 bytes).
+Output written on build/main.pdf (20 pages, 726360 bytes).
 Transcript written on build/main.log.

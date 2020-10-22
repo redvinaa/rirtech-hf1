@@ -7,24 +7,33 @@ $\mathrm{U}_\omega = \frac{\omega_\text{n}}{2s}$,
 a zavarójel pedig legyen egy $\tau_0$ nagyságú ugrásfüggvény időben eltolva $T_0$-al,
 ami elvileg végtelen: $\mathrm{U}_\tau=\frac{\tau_0}{s}\text{e}^{-T_0s}$.
 
-A rendszer szögsebesség válasza ezekre a bemenetekre kiszámítható a hatásvázlat segítségével.
-
+A rendszer szögsebesség válasza ezekre a bemenetekre kiszámítható \aref{fig:pi-hatasvazlat}.
+ábra segítségével.
+Legyen a $\fn{W}_\text{p}$ szögsebesség bemenete $\fn{U}_\text{p}$, valamint a 
+zavaró bemenet $\fn{U}_\tau$, $\fn{W}_{\text{p}\tau}$ átviteli függvénnyel.
+Ezek kimeneteit össze lehet adni, így a rotor szögsebesség válasza $\fn{Y}$ lesz.
 \begin{equation}
 	\fn{Y} = \fn{W}_\text{p}\fn{U}_\text{p} + \fn{W}_{\text{p}\tau}\fn{U}_\tau
 \end{equation}
+
+Most írjuk fel $\fn{U}_\text{p}$-t a kimenet alapján.
 \begin{equation}
 	\fn{U}_\text{p} = \fn{W}_\text{c}\brc{\fn{U}_0 - \fn{Y}}
 \end{equation}
+%
+Behelyettesítve megkapjuk a keresett válaszfüggvényt:
 \begin{equation}
-	\fn{Y} = \frac{\fn{W}_\text{p}\fn{W}_\text{c}\fn{U}_0 + \fn{W}_{\text{p}\tau}\fn{U}_\tau}{\fn{W}_\text{p}\fn{W}_\text{c} +1}
+	\fn{Y} = \frac{\fn{W}_\text{p}\fn{W}_\text{c}\fn{U}_0 + \fn{W}_{\text{p}\tau}\fn{U}_\tau}{\fn{W}_\text{p}\fn{W}_\text{c} +1},
 \end{equation}
+%
+Ezt inverz Laplace-transzformálni kell, ezzel megkapjuk a kimenet időfüggvényét.
 \begin{equation}
 	\fn{y} = \mathcal{L}^{-1}\{\fn{Y}\}
 \end{equation}
 
 A szögsebességből az áram az alábbiak szerint számolható:
 \begin{equation}
-	\fn{i}_\text{a}(s) = \ke\fn{W}_\text{el}\brc{\fn{U}_0 - \fn{Y}_\omega}
+	\fn{I}_\text{a}(s) = \ke\fn{W}_\text{el}\brc{\fn{U}_0 - \fn{Y}_\omega}
 \end{equation}
 
 Ezeknek az egyenleteknek a behelyettesített változatát nem írom ki, mert
