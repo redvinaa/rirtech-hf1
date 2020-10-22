@@ -27,9 +27,9 @@ Wx = Wo/(1+Wo);
 Wx = minreal(Wx)
 
 % bode(Wx, [1, 1e6]);grid;
-% margin(Wo);grid;
+margin(Wo);grid;
 
 % impulse(Wx*wn/2);grid;
-step(Wx*wn);grid;
-title('')
-ylabel('szögsebesség (rad/s)')
+% step(Wx*wn);grid;
+% title('')
+% ylabel('szögsebesség (rad/s)')

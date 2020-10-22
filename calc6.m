@@ -1,5 +1,5 @@
 clc
-disp('file: calc5.m')
+disp('file: calc6.m')
 
 num_Ra = 11.1;
 num_La = 1.52e-3;
@@ -11,10 +11,10 @@ num_wn = 463.91;
 num_in = 0.804;
 num_un = 36;
 num_TI = 0.0145;
-num_T0 = 1;
-num_P = 0.05;
+num_T0 = .05;
+num_n = 0.05;
 num_TD = 1.3825e-4;
-num_n  = 40.827;
+num_P  = 40.827;
 
 
 syms s Ra La km ke Ja TD n P T0 tau0 wn t;
@@ -38,149 +38,90 @@ Wtw = simplify(Wo/(1+Wo*Wf));
 
 Wc = P*(TD*s + 1)/(n*TD*s + 1);
 
-%{{{ Plot 5-w %}
+
+%{{{ Time responses
+
 Yw = (Wp*Wc*Uw + Wtw*Ut)  /  (Wp*Wc + 1);
 Yw = simplify(Yw)
-% disp('Output')
-% latex(Yw)
 
-% num_Yw = subs(Yw, [Ra, La, km, ke, Ja, TD, n, P, T0, wn], [num_Ra, num_La, num_km, num_ke, num_Ja, num_TD, num_n, num_P, num_T0, num_wn]);
-% num_Yw = vpa(num_Yw);
-% yw = ilaplace(num_Yw, s, t);
-% latex(yw)
-% fun_yw = symfun(yw, [t tau0])
-
-% t = linspace(0, 2, 1000);
-
-% tau_i = [0.003 0.006 0.0101];
-
-% hold on
-% for i = 1:length(tau_i)
-%     plot(t, fun_yw(t, tau_i(i)), 'LineWidth', 2);grid;
-% end
-% xlabel('idő (s)');
-% ylabel('szögsebesség (rad/s)');
-% legend('0.003', '0.006', '0.0101');
-% grid;
-% hold off;
-%}}}
-
-%{{{ Plot 5-i %}
-Yi = ke*Wel*(Uw - Yw)
-disp('Output')
-latex(Yw);
-
-num_Yi = subs(Yi, [Ra, La, km, ke, Ja, P, TD, n, T0, wn], [num_Ra, num_La, num_km, num_ke, num_Ja, num_P, num_TD, num_n, num_T0, num_wn]);
-num_Yi = vpa(num_Yi)
-yi = ilaplace(num_Yi, s, t)
-fun_yi = symfun(yi, [t tau0])
-
-t = linspace(0, 2, 1000);
-
-tau_i = [0.003 0.006 0.0101];
-
-hold on
-for i = 1:length(tau_i)
-	plot(t, fun_yi(t, tau_i(i)), 'LineWidth', 2);
-end
-xlabel('idő (s)');
-ylabel('armatúra áram (A)');
-legend('0.003', '0.006', '0.0101');
-grid;
-hold off;
-%}}}
-
-%{{{ tau_max %}
 Yi = ke*Wel*(Uw - Yw);
+Yi = simplify(Yi);
+
+num_Yw = subs(Yw, [Ra, La, km, ke, Ja, TD, n, P, T0, wn], [num_Ra, num_La, num_km, num_ke, num_Ja, num_TD, num_n, num_P, num_T0, num_wn]);
+num_Yw = vpa(num_Yw);
+yw = ilaplace(num_Yw, s, t);
+fun_yw = symfun(yw, [t tau0])
 
 num_Yi = subs(Yi, [Ra, La, km, ke, Ja, TD, n, P, T0, wn], [num_Ra, num_La, num_km, num_ke, num_Ja, num_TD, num_n, num_P, num_T0, num_wn]);
 num_Yi = vpa(num_Yi)
 yi = ilaplace(num_Yi, s, t)
 fun_yi = symfun(yi, [t tau0])
-
-t = linspace(0.99, 2, 50);
-tau_i = linspace(0, .1, 50);
-
-imax = 0;
-taumax = 0;
-tmax = 0;
-for i = 1:length(tau_i)
-	for j = 1:length(t)
-		I = abs(fun_yi(t(j), tau_i(i)));
-		if I > imax
-			imax = I;
-			taumax = tau_i(i);
-			tmax = t(j);
-		end
-		if I > num_in
-			disp('found max')
-			disp('imax:')
-			imax
-			disp('taumax')
-			taumax
-			disp('tmax')
-			tmax
-			return
-		end
-	end
-end
-disp('max not found')
-disp('imax:')
-imax
-disp('taumax')
-taumax
-disp('tmax')
-tmax
 %}}}
 
-%{{{ Trash
 
-% Wo_p = Wel*Wme*km;
-% Wf_p = ke;
-% Wp = simplify(ke * Wo_p/(1+Wo_p*Wf_p));
+%{{{ tau_max %}
 
-% Wc = P*(1 + 1/(TI*s));
+% t0 = linspace(0.09, 0.11, 70);
+% tau_i = linspace(2, 2.1, 50);
 
-% Wo = Wc*Wp;
-% Wx = Wo/(1+Wo);
-% Wx = simplify(Wx);
-% disp('Closed loop transfer function')
-% latex(Wx)
+% imax = 0;
+% taumax = 0;
+% t0max = 0;
+% for i = 1:length(tau_i)
+%     for j = 1:length(t0)
+%         I = abs(fun_yi(t0(j), tau_i(i)));
+%         if I > imax
+%             imax = I;
+%             taumax = tau_i(i);
+%             t0max = t0(j);
+%         end
+%         if I > num_in
+%             disp('found max')
+%             disp('imax:')
+%             imax
+%             disp('taumax')
+%             taumax
+%             disp('tmax')
+%             t0max
+%             % return
+%             break
+%         end
+%     end
+%     if I > num_in
+%         break
+%     end
+% end
 
-% [Wx_num, Wx_den] = numden(Wx);
-% disp('Karakterisztikus egyenlet')
-% latex(Wx_den)
+taumax = 2.07
 
-% num_Wx_den = subs(Wx_den, [Ja, Ra, TI, La, ke, km], [num_Ja, num_Ra, num_TI, num_La, num_ke, num_km])
-% disp('Poles')
-% pi = solve(num_Wx_den, s);
-% pi = vpa(pi)
+t0 = linspace(0, .2, 1000);
+tau_i = taumax * [1/3., 2/3., 1.]
+%}}}
 
-% arr_P = linspace(-20, 40, 1000);
-% fun_p1 = symfun(pi(1), P);
-% fun_p2 = symfun(pi(2), P);
-% fun_p3 = symfun(pi(3), P);
-% hold on
-% plot(arr_P, real(fun_p1(arr_P)))
-% plot(arr_P, real(fun_p2(arr_P)))
-% plot(arr_P, real(fun_p3(arr_P)))
-% legend('p1', 'p2', 'p3');grid;
-% % xlim([-1 10]);
-% % ylim([-200 10]);
-% hold off
-% title('')
-% xlabel('körerősítés')
-% ylabel('pólus valós része')
+%{{{ Plot 5-w %}
 
+hold on
+for i = 1:length(tau_i)
+	plot(t0, fun_yw(t0, tau_i(i)))
+end
+xlabel('idő (s)');
+ylabel('szögsebesség (rad/s)');
+legend('0.69', '1.38', '2.07');
+grid;
+hold off;
+pause;
+%}}}
 
+%{{{ Plot 5-i %}
 
-% % disp('dcgain')
-% % abs(subs(Wx, s, 0))
-
-% % pi = poles(Wx, s);
-% % p2 = simplify(pi(1))
-% % p1 = simplify(pi(2))
-% % T2 = -1/p2
-% % T1 = -1/p1
-
+close
+hold on
+for i = 1:length(tau_i)
+	plot(t0, fun_yi(t0, tau_i(i)))
+end
+xlabel('idő (s)');
+ylabel('armatúra áram (A)');
+legend('0.69', '1.38', '2.07');
+grid;
+hold off;
 %}}}
