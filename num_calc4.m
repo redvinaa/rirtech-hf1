@@ -2,9 +2,9 @@ clc
 disp('file: num_calc4')
 
 s = tf('s');
-P = 0.05
+n = 0.05
 TD = 1.3825e-4
-n = 40.827
+P = 40.827
 parameters
 
 
@@ -30,4 +30,6 @@ Wx = minreal(Wx)
 % margin(Wo);grid;
 
 % impulse(Wx*wn/2);grid;
-step(Wx*wn/2);grid;
+step(Wx*wn);grid;
+title('')
+ylabel('szögsebesség (rad/s)')

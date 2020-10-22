@@ -93,46 +93,46 @@ grid;
 %}}}
 
 %{{{ tau_max %}
-% Yi = ke*Wel*(Uw - Yw);
+Yi = ke*Wel*(Uw - Yw);
 
-% num_Yi = subs(Yi, [Ra, La, km, ke, Ja, TI, P, T0, wn], [num_Ra, num_La, num_km, num_ke, num_Ja, num_TI, num_P, num_T0, num_wn]);
-% num_Yi = vpa(num_Yi);
-% yi = ilaplace(num_Yi, s, t)
-% fun_yi = symfun(yi, [t tau0])
+num_Yi = subs(Yi, [Ra, La, km, ke, Ja, TI, P, T0, wn], [num_Ra, num_La, num_km, num_ke, num_Ja, num_TI, num_P, num_T0, num_wn]);
+num_Yi = vpa(num_Yi);
+yi = ilaplace(num_Yi, s, t)
+fun_yi = symfun(yi, [t tau0])
 
-% t = linspace(0.099, .15, 500);
-% tau_i = linspace(0.3, 1, 20);
+t = linspace(0.099, .15, 500);
+tau_i = linspace(0.3, 1, 20);
 
-% imax = 0;
-% taumax = 0;
-% tmax = 0;
-% for i = 1:length(tau_i)
-%     for j = 1:length(t)
-%         I = abs(fun_yi(t(j), tau_i(i)));
-%         if I > imax
-%             imax = I;
-%             taumax = tau_i(i);
-%             tmax = t(j);
-%         end
-%         if I > num_in
-%             disp('found max')
-%             disp('imax:')
-%             imax
-%             disp('taumax')
-%             taumax
-%             disp('tmax')
-%             tmax
-%             return
-%         end
-%     end
-% end
-% disp('max not found')
-% disp('imax:')
-% imax
-% disp('taumax')
-% taumax
-% disp('tmax')
-% tmax
+imax = 0;
+taumax = 0;
+tmax = 0;
+for i = 1:length(tau_i)
+	for j = 1:length(t)
+		I = abs(fun_yi(t(j), tau_i(i)));
+		if I > imax
+			imax = I;
+			taumax = tau_i(i);
+			tmax = t(j);
+		end
+		if I > num_in
+			disp('found max')
+			disp('imax:')
+			imax
+			disp('taumax')
+			taumax
+			disp('tmax')
+			tmax
+			return
+		end
+	end
+end
+disp('max not found')
+disp('imax:')
+imax
+disp('taumax')
+taumax
+disp('tmax')
+tmax
 %}}}
 
 %{{{ Trash

@@ -40,7 +40,7 @@ latex(Wx)
 disp('Karakterisztikus egyenlet')
 latex(simplify(Wx_den))
 
-num_Wx_den = subs(Wx_den, [Ja, Ra, TI, TD, n, La, ke, km], [num_Ja, num_Ra, num_TI, num_TD, num_n, num_La, num_ke, num_km])
+num_Wx_den = subs(Wx_den, [Ja, Ra, TD, n, La, ke, km], [num_Ja, num_Ra, num_TD, num_n, num_La, num_ke, num_km])
 disp('Poles')
 pi = solve(num_Wx_den, s);
 pi = vpa(pi)
@@ -54,8 +54,8 @@ plot(arr_P, real(fun_p1(arr_P)))
 plot(arr_P, real(fun_p2(arr_P)))
 plot(arr_P, real(fun_p3(arr_P)))
 legend('p1', 'p2', 'p3');grid;
-xlim([-2 1]);
-ylim([-200 100]);
+% xlim([-2 1]);
+% ylim([-200 100]);
 hold off
 title('')
 xlabel('körerősítés')
