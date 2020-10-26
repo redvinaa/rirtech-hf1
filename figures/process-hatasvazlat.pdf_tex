@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{1755.12699157bp}%
+    \setlength{\unitlength}{1470.54026206bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,10 +50,10 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.29434045)%
+  \begin{picture}(1,0.35134919)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.88057946,-0.280027){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.36625113\unitlength}\centering \end{minipage}}}%
+    \put(0.85746865,-0.33417289){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.43712998\unitlength}\centering \end{minipage}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{process-hatasvazlat.pdf}}%
   \end{picture}%
 \endgroup%

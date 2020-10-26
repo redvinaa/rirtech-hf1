@@ -19,8 +19,8 @@ A motort egyetlen átviteli függvénnyel írjuk le,
 \aref{fig:process-hatasvazlat}. ábrának megfelelően.
 Ezt irányított szakasznak hívjuk, és kifejtve a
 \begin{equation}
-	\fn{W}_\text{p} = \ke\fn{W}_{\fn{U}_0\rightarrow\Omega_\text{ki}} =
-	\frac{\ke\, \km}{\Ja\, \La\, s^2 + \Ja\, \Ra\, s + \ke\, \km}
+	\fn{W}_\text{p} = \fn{W}_{\fn{U}_0\rightarrow\Omega_\text{ki}} =
+	\frac{\km}{\Ja\, \La\, s^2 + \Ja\, \Ra\, s + \ke\, \km}
 \end{equation}
 alakot kapja.
 A visszacsatoló ág üres, tehát $\fn{W}_\text{f} = 1$.
@@ -44,13 +44,13 @@ Jelöljük az előrevezető ág átviteli függvényét $\fn{W}_\text{x}$-val.
 A zárt szabályozási kör átviteli függvénye
 \begin{equation}\label{eq:W-x}
 	\fn{W}_\text{o} = \frac{\fn{W}_\text{x}}{1 + \fn{W}_\text{x}} =
-	\frac{P\, \ke\, \km\, \left(T_\text{I}\, s + 1\right)}{P\, \ke\, \km + \Ja\, \La\, T_\text{I}\, s^3 + \Ja\, \Ra\, T_\text{I}\, s^2 + T_\text{I}\, \ke\, \km\, s + P\, T_\text{I}\, \ke\, \km\, s}
+	\frac{P\, \km\, \left(T_\text{I}\, s + 1\right)}{P\, \km + \Ja\, \La\, T_\text{I}\, s^3 + \Ja\, \Ra\, T_\text{I}\, s^2 + P\, T_\text{I}\, \km\, s + T_\text{I}\, \ke\, \km\, s}
 \end{equation}
 
 A zárt szabályozási kör karakterisztikus egyenlete \aref{eq:W-x}. egyenlet nevezője, 
 ami nullával egyenlő.
 \begin{equation}
-	P\, \ke\, \km + \Ja\, \La\, T_\text{I}\, s^3 + \Ja\, \Ra\, T_\text{I}\, s^2 + T_\text{I}\, \ke\, \km\, s + P\, T_\text{I}\, \ke\, \km\, s = 0.
+	P\, \km + \Ja\, \La\, T_\text{I}\, s^3 + \Ja\, \Ra\, T_\text{I}\, s^2 + P\, T_\text{I}\, \km\, s + T_\text{I}\, \ke\, \km\, s = 0
 \end{equation}
 %}}}
 
@@ -63,11 +63,11 @@ negatív része valós, tehát a rendszer stabil.
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}{.49\textwidth}
-		\includegraphics[width=\linewidth, trim=90 240 100 252, clip]{polus}
+		\includegraphics[width=\linewidth, trim=90 240 100 242, clip]{polus}
 		\caption{Lényeges $P$ értékek}
 	\end{subfigure}
 	\begin{subfigure}{.49\textwidth}
-		\includegraphics[width=\linewidth, trim=90 240 100 252, clip]{polus-big}
+		\includegraphics[width=\linewidth, trim=90 240 100 242, clip]{polus-big}
 		\caption{0 körüli $P$-k}
 	\end{subfigure}
 	\caption{Pólusok valós része a körerősítés függvényében}
@@ -82,7 +82,7 @@ negatív része valós, tehát a rendszer stabil.
 Válasszuk a körerősítést $P=\vartheta_2 = 4,063$-re.
 Ennek a rendszernek a Bode-diagramját mutatja \aref{fig:bode}. ábra.
 A \verb|margin| függvényt használva megkapjuk a fázistartalékot,
-ami $\varphi_\text{m}=87.8^\circ$.
+ami $\varphi_\text{m}=60^\circ$.
 
 \begin{figure}[H]
 	\centering

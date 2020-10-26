@@ -26,7 +26,7 @@ Wme = 1/(Ja*s);
 
 Wo_p = Wel*Wme*km;
 Wf_p = ke;
-Wp = simplify(ke * Wo_p/(1+Wo_p*Wf_p));
+Wp = simplify(Wo_p/(1+Wo_p*Wf_p));
 
 Wc = P*(TD*s + 1)/(n*TD*s + 1);
 
@@ -54,8 +54,8 @@ plot(arr_P, real(fun_p1(arr_P)))
 plot(arr_P, real(fun_p2(arr_P)))
 plot(arr_P, real(fun_p3(arr_P)))
 legend('p1', 'p2', 'p3');grid;
-% xlim([-2 1]);
-% ylim([-200 100]);
+xlim([-2 1]);
+ylim([-200 100]);
 hold off
 title('')
 xlabel('körerősítés')

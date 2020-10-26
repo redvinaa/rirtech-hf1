@@ -27,7 +27,13 @@ function s:Rplc2()
 	:%s/U_\\text/\\fn{U}_\\text/g
 	:%s/U_0/\\fn{U}_0/g
 endfunction
+function s:Rplc3()
+	:%s/Wo/Wtmp/g
+	:%s/Wx/Wo/g
+	:%s/Wtmp/Wx/g
+endfunction
 
 vnoremap <leader>v :call <SID>Rplc()<cr>
 nnoremap <leader>V :call <SID>Rplc2()<cr>
+nnoremap <leader>v :call <SID>Rplc3()<cr>
 

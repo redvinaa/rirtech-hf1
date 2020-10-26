@@ -23,25 +23,25 @@ Wel = 1/(Ra + La*s);
 Wme = 1/(Ja*s);
 
 
-Wo_p = Wel*Wme*km;
+Wx_p = Wel*Wme*km;
 Wf_p = ke;
-Wp = simplify(ke * Wo_p/(1+Wo_p*Wf_p));
+Wp = simplify(Wx_p/(1+Wx_p*Wf_p));
 
 Wc = P*(1 + 1/(TI*s));
 
-Wo = Wc*Wp;
-Wx = Wo/(1+Wo);
-Wx = simplify(Wx);
+Wx = Wc*Wp;
+Wo = Wx/(1+Wx);
+Wo = simplify(Wo);
 disp('Closed loop transfer function')
-latex(Wx)
+latex(Wo)
 
-[Wx_num, Wx_den] = numden(Wx);
+[Wo_num, Wo_den] = numden(Wo);
 disp('Karakterisztikus egyenlet')
-latex(Wx_den)
+latex(Wo_den)
 
-num_Wx_den = subs(Wx_den, [Ja, Ra, TI, La, ke, km], [num_Ja, num_Ra, num_TI, num_La, num_ke, num_km])
+num_Wo_den = subs(Wo_den, [Ja, Ra, TI, La, ke, km], [num_Ja, num_Ra, num_TI, num_La, num_ke, num_km])
 disp('Poles')
-pi = solve(num_Wx_den, s);
+pi = solve(num_Wo_den, s);
 pi = vpa(pi)
 
 arr_P = linspace(-20, 40, 1000);
@@ -53,8 +53,8 @@ plot(arr_P, real(fun_p1(arr_P)))
 plot(arr_P, real(fun_p2(arr_P)))
 plot(arr_P, real(fun_p3(arr_P)))
 legend('p1', 'p2', 'p3');grid;
-% xlim([-1 10]);
-% ylim([-200 10]);
+xlim([-1 1]);
+ylim([-1e3 1e3]);
 hold off
 title('')
 xlabel('körerősítés')

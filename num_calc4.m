@@ -16,20 +16,20 @@ Wme = 1/(Ja*s);
 disp('4/a')
 
 
-Wo_p = Wel*Wme*km;
+Wx_p = Wel*Wme*km;
 Wf_p = ke;
-Wp = minreal(ke * Wo_p/(1+Wo_p*Wf_p));
+Wp = minreal(Wx_p/(1+Wx_p*Wf_p));
 
 Wc = P*(TD*s + 1)/(n*TD*s + 1);
 
-Wo = minreal(Wc*Wp);
-Wx = Wo/(1+Wo);
-Wx = minreal(Wx)
+Wx = minreal(Wc*Wp);
+Wo = Wx/(1+Wx);
+Wo = minreal(Wo)
 
-% bode(Wx, [1, 1e6]);grid;
-margin(Wo);grid;
+% bode(Wo, [1, 1e6]);grid;
+% margin(Wx);grid;
 
-% impulse(Wx*wn/2);grid;
-% step(Wx*wn);grid;
-% title('')
-% ylabel('szögsebesség (rad/s)')
+impulse(Wo*wn/2);grid;
+% step(Wo*wn);grid;
+title('')
+ylabel('szögsebesség (rad/s)')

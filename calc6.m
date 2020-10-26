@@ -1,4 +1,6 @@
 clc
+clear all
+digits 6
 disp('file: calc6.m')
 
 num_Ra = 11.1;
@@ -10,8 +12,8 @@ num_Ja = 4.46e-6;
 num_wn = 463.91;
 num_in = 0.804;
 num_un = 36;
-num_TI = 0.0145;
-num_T0 = .05;
+% num_TI = 0.0145;
+num_T0 = .005;
 num_n = 0.05;
 num_TD = 1.3825e-4;
 num_P  = 40.827;
@@ -28,18 +30,18 @@ Wme = 1/(Ja*s);
 Uw = wn/(2*s);
 Ut = tau0/s * exp(-T0*s);
 
-Wo = ke * Wel*km*Wme
+Wx = Wel*km*Wme
 Wf = ke
-Wp = simplify(Wo/(1+Wo*Wf));
+Wp = simplify(Wx/(1+Wx*Wf));
 
-Wo = -Wme;
+Wx = -Wme;
 Wf = -km*ke*Wel;
-Wtw = simplify(Wo/(1+Wo*Wf));
+Wtw = simplify(Wx/(1+Wx*Wf));
 
 Wc = P*(TD*s + 1)/(n*TD*s + 1);
 
 
-%{{{ Time responses
+%{{{ Time responses %}
 
 Yw = (Wp*Wc*Uw + Wtw*Ut)  /  (Wp*Wc + 1);
 Yw = simplify(Yw)
@@ -61,8 +63,8 @@ fun_yi = symfun(yi, [t tau0])
 
 %{{{ tau_max %}
 
-% t0 = linspace(0.09, 0.11, 70);
-% tau_i = linspace(2, 2.1, 50);
+% t0 = linspace(num_T0+0.005, num_T0+0.005, 70);
+% tau_i = linspace(30, 35, 50);
 
 % imax = 0;
 % taumax = 0;
@@ -92,9 +94,9 @@ fun_yi = symfun(yi, [t tau0])
 %     end
 % end
 
-taumax = 2.07
+taumax = 32.86
 
-t0 = linspace(0, .2, 1000);
+t0 = linspace(0, .01, 1000);
 tau_i = taumax * [1/3., 2/3., 1.]
 %}}}
 
@@ -106,7 +108,7 @@ for i = 1:length(tau_i)
 end
 xlabel('idő (s)');
 ylabel('szögsebesség (rad/s)');
-legend('0.69', '1.38', '2.07');
+legend('10,96', '21,91', '32,68');
 grid;
 hold off;
 pause;
@@ -121,7 +123,7 @@ for i = 1:length(tau_i)
 end
 xlabel('idő (s)');
 ylabel('armatúra áram (A)');
-legend('0.69', '1.38', '2.07');
+legend('10,96', '21,91', '32,68');
 grid;
 hold off;
 %}}}
